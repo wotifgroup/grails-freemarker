@@ -59,6 +59,7 @@ grails.project.dependency.resolution = {
         build(":svn:1.0.2"){
             export = false
         }
+	compile ":maven-publisher:0.8.1"
     }
 }
 //grails.project.work.dir = '.grails'
