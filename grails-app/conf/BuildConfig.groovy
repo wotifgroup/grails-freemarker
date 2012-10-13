@@ -10,12 +10,12 @@ grails.project.dependency.resolution = {
         excludes //"httpclient"//, "httpcore"
     }
 
-    repositories {        
+    repositories {
+        mavenLocal()
+        mavenCentral()
         grailsPlugins()
         grailsHome()
         grailsCentral()
-        mavenCentral()
-        //mavenLocal()
     }
 
     dependencies {
@@ -59,7 +59,6 @@ grails.project.dependency.resolution = {
         build(":svn:1.0.2"){
             export = false
         }
-	compile ":maven-publisher:0.8.1"
     }
 }
 //grails.project.work.dir = '.grails'
