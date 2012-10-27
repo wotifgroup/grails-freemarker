@@ -40,7 +40,7 @@ grails.project.dependency.resolution = {
 
     plugins {
         compile(":plugin-config:${versions.pluginConfig}"){}
-        compile(":tomcat:$grailsVersion", ":hibernate:$grailsVersion") {
+        compile(":tomcat:$grailsVersion") {
             export = false
         }
         if ("$grailsVersion" > "1.3.7") {
